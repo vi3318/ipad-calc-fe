@@ -1,16 +1,13 @@
-import path from 'path'
-import react from '@vitejs/plugin-react'
-import eslint from 'vite-plugin-eslint'
-import { defineConfig } from 'vite'
-
+import path from "path"
+import react from "@vitejs/plugin-react"
+import eslint from 'vite-plugin-eslint';
+import { defineConfig } from "vite"
+ 
 export default defineConfig({
-  plugins: [react(), eslint()],
+  plugins: [react(),eslint()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      "@": path.resolve(__dirname, "./src"),
     },
   },
-  build: {
-    outDir: 'frontend/dist',  // Ensure the output directory is set to 'frontend/dist'
-  },
-})
+})  
